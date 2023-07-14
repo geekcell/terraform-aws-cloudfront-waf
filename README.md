@@ -67,9 +67,9 @@ it is mandatory to run in the "us-east-1" region. Check the example.
 - resource.aws_cloudwatch_log_resource_policy.main (cloudwatch.tf#13)
 - resource.aws_wafv2_web_acl.main (main.tf#7)
 - resource.aws_wafv2_web_acl_logging_configuration.main (cloudwatch.tf#8)
-- data source.aws_caller_identity.current (cloudwatch.tf#48)
+- data source.aws_caller_identity.current (cloudwatch.tf#59)
 - data source.aws_iam_policy_document.main (cloudwatch.tf#18)
-- data source.aws_region.current (cloudwatch.tf#46)
+- data source.aws_region.current (cloudwatch.tf#57)
 
 # Examples
 ### Complete
