@@ -37,7 +37,7 @@ data "aws_iam_policy_document" "main" {
     ]
 
     condition {
-      test = "ArnLike"
+      test   = "ArnLike"
       values = [
         "arn:aws:logs:${data.aws_region.current.name}:${data.aws_caller_identity.current.account_id}:*"
       ]
@@ -45,7 +45,7 @@ data "aws_iam_policy_document" "main" {
     }
 
     condition {
-      test = "StringEquals"
+      test   = "StringEquals"
       values = [
         tostring(data.aws_caller_identity.current.account_id)
       ]
