@@ -84,10 +84,3 @@ resource "aws_wafv2_web_acl" "main" {
 
   tags = var.tags
 }
-
-module "cloudwatch_log_group" {
-  source  = "geekcell/cloudwatch-log-group/aws"
-  version = ">= 1.0.1, < 2.0.0"
-
-  name = "/aws/cloudfront/waf/${var.name}"
-}
